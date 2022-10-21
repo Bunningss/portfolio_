@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+:root {
+    --light-primary: #F4F5FF;
+    --dark-primary: #2F1C6A;
+    --dark-secondary: #212529;
+    --grey: #9e9696;
+    --grey-light: rgb(223, 222, 222);
+    --white: #fff;
+    --lobsterFont: 'Lobster Two', cursive;
+}
+
+body {
+    user-select: none;
+    background-color: var(--light-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+// MediaQuery
+$largeLaptop: 1440px;
+@mixin  laptopLarge {
+  @media (max-width: #{$largeLaptop}) {
+    @content
+  }
+}
+
+$laptopMid: 1220px;
+@mixin laptopMid {
+  @media (max-width: #{$laptopMid}) {
+    @content
+  }
+}
+
+$laptop: 1024px;
+@mixin laptop {
+  @media (max-width: #{$laptop}) {
+    @content
+  }
+}
+
+$mobile: 500px;
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content
+  }
+}
+
+.default {
+    background-color: var(--backgroundPrimary);
+    height: 100vh;
+    padding: 30px;
+    margin: 0 0 0 60px;
+    animation: reveal 1s linear;
+
+    @include laptop {
+      padding: 15px;
+    }
+
+    @include mobile {
+      padding: 10px;
+      margin: 0;
+    }
+}
+
+.slide {
+    animation: slideRight 1s linear;
+}
+
+.active {
+  display: inline-block;
+  animation: jumpy 3s both;
+  color: var(--accentColor);
+  // text-shadow:0 1px 0 var(--accentColor), 0 2px 0 var(--accentColor), 0 3px 0 var(--accentColor), 0 4px 0 var(--accentColor), 0 5px 0 var(--accentColor), 0 6px 0 var(--accentColor), 0 7px 0 var(--accentColor), 0 8px 0 var(--accentColor), 0 9px 0 var(--accentColor), 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes reveal {
+    0% {
+        clip-path: circle(5%);
+    }
+    100% {
+        clip-path: circle(100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: none;
+    }
+}
+
+@-webkit-keyframes jumpy {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jumpy {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+

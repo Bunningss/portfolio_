@@ -1,0 +1,11 @@
+.home {
+    position: relative;
+    overflow: hidden;
+
+    .textArea {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,21 @@
+.textZone {
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 1.6;
+    color: var(--dark-secondary);
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.textZoneLink {
+    width: fit-content;
+    margin: 10px 0;
+    color: var(--dark-primary);
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: .6;
+    }
+}

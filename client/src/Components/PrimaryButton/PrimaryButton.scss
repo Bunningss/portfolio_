@@ -1,0 +1,19 @@
+.btnPrimary {
+    max-width: 250px;
+    padding: 15px;
+    font-size: 16px;
+    color: var(--dark-primary);
+    border: 1px solid var(--dark-secondary);
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 3px;
+    transition: all .3s ease;
+
+    &:hover {
+        animation: reveal .6s linear;
+        background-color: var(--dark-secondary);
+        color: var(--light-primary);
+    }
+}
