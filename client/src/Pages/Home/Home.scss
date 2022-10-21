@@ -1,6 +1,9 @@
 .home {
     position: relative;
     overflow: hidden;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
 
     .textArea {
         height: 100%;

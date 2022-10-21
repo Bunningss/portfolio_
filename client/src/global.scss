@@ -20,7 +20,6 @@
 body {
     user-select: none;
     background-color: var(--light-primary);
-    overflow: hidden;
 }
 
 a {
@@ -61,7 +60,7 @@ $mobile: 500px;
 }
 
 .default {
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px;
   margin: 0 0 0 60px;
   animation: reveal 1s linear;
