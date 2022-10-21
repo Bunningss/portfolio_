@@ -1,9 +1,21 @@
+import { sidebarList } from '../../staticData';
+import ListItem from '../ListItem/ListItem';
 import './Sidebar.scss';
 
-const Sidebar = () => {
+const Sidebar = ({ active, setActive }) => {
+  const handleClick = () => {
+    setActive(false);
+  };
+
   return (
-    <div className='sidebar'>
-        
+    <div className={active ? 'sidebar visible' : 'sidebar'} onClick={handleClick}>
+        <ul className="sidebar-list">
+          {
+            sidebarList.map((data, indx) => (
+              <ListItem data={data} key={indx} handleClick={handleClick}/>
+            ))
+          }
+        </ul>
     </div>
   )
 }

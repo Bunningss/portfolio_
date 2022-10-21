@@ -1,7 +1,13 @@
 a {
     transition: all .3s ease;
+    color: var(--dark-primary);
 
     .listItem {
+
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+        }
 
         img {
             width: 30px;

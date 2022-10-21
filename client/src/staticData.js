@@ -88,3 +88,22 @@ export const projects = [
         link: ''
     },
 ];
+
+export const sidebarList = [
+    {
+        title: 'Home',
+        href: ''
+    },
+    {
+        title: 'About',
+        href: "/about"
+    },
+    {
+        title: 'Projects',
+        href: "/projects"
+    },
+    {
+        title: 'Contact Me',
+        href: "/contact"
+    },
+];
