@@ -2,7 +2,7 @@
     font-size: 16px;
     word-spacing: 5px;
     line-height: 1.6;
-    color: var(--dark-secondary);
+    color: var(--dark-primary);
     text-transform: capitalize;
     margin: 10px 0;
 }
@@ -16,6 +16,6 @@
     transition: all .3s ease;
 
     &:hover {
-        opacity: .6;
+        color: var(--dark-secondary);
     }
 }

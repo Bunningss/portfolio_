@@ -4,11 +4,11 @@ import project from './img/project.png';
 import contact from './img/contact.png';
 
 // Projects
-import customSticker from './img/projects/custom_sticker.png';
-import puropasta from './img/projects/puropasta.png';
-import zeus_drinks from './img/projects/zeus_drinks.png';
-import pocobun from './img/projects/pocobun.png';
-import briton_store from './img/projects/briton_store.png';
+import customSticker from './img/projects/custom_sticker.webp';
+import puropasta from './img/projects/puropasta.webp';
+import zeus_drinks from './img/projects/zeus_drinks.webp';
+import pocobun from './img/projects/pocobun.webp';
+import briton_store from './img/projects/briton_store.webp';
 
 export const navbarData = [
     {
@@ -50,7 +50,7 @@ export const expertiseData = [
         id: 2,
         label: "Node JS",
         exp: "87",
-        color: "rgb(104, 42, 233)"
+        color: "rgb(69,151,71)"
     },
     {
         id: 3,

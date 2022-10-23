@@ -8,7 +8,8 @@ import TextZone from '../../Components/TextZone/TextZone';
 const Home = () => {
   const navigate = useNavigate();
   const text = `Hello\nI'm Mahmud,\nWeb Developer`;
-  const textZone = "front end developer / designer";
+  const textZone = "web developer / designer";
+
   const handleClick = () => {
     navigate('/contact')
   };
@@ -18,7 +19,7 @@ const Home = () => {
       <div className="textArea">
         <TextAnimate text={text}/>
         <TextZone text={textZone}/>
-        <PrimaryButton onClick={handleClick} text={"Contact Me!"}/>
+        <PrimaryButton handleClick={handleClick} text={"Contact Me!"}/>
       </div>
       <Figure/>
     </div>

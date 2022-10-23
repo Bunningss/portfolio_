@@ -8,7 +8,7 @@ const Project = ({ project }) => {
             <div className="circle"></div>
             <div className="circle"></div>
         </div>
-        <img src={project.image} alt="" className='project-image' />
+        <img src={project.image} alt="" className='project-image' loading='lazy' />
     </a>
   )
 }

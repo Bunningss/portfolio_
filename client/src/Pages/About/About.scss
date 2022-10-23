@@ -3,10 +3,12 @@
 .about {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @include laptop {
         display: flex;
         flex-direction: column;
+        gap: 80px;
     }
 
     .aboutLeft {
