@@ -11,6 +11,14 @@
         gap: 80px;
     }
 
+    @include mobile {
+        gap: 40px;
+    }
+
+    @include mobileSmall {
+        gap: 20px;
+    }
+
     .aboutLeft {
         width: 50%;
         height: 100%;

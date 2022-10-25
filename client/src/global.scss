@@ -59,6 +59,14 @@ $mobile: 500px;
   }
 }
 
+$mobile-small: 399px;
+@mixin mobileSmall {
+  @media (max-width: #{$mobile-small}) {
+    @content
+  }
+}
+
+
 .default {
   min-height: 100vh;
   padding: 30px;
