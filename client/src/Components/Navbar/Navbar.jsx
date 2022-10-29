@@ -1,21 +1,25 @@
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import ListItem from '../ListItem/ListItem';
-import { navbarData } from '../../staticData';
+import { extData } from '../../staticData';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <Link className='logoContainer' to='/'>
-        <h1 className="logo">M</h1>
-      </Link>
-      <ul className="navbarList">
-        {
-          navbarData.map((data) => (
-            <ListItem key={data.id} data={data}/>
-          ))
-        }
-      </ul>
+      <div className="logo">
+        <Link to='/'>
+          <h2 className='logo-main'>m</h2>
+        </Link>
+      </div>
+      <div className="links">
+        <ul className="list">
+          {
+            extData.map((item, indx) => (
+              <ListItem data={item} key={indx}/>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   )
 }

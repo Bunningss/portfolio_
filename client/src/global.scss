@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 :root {
@@ -15,6 +15,7 @@
     --grey-light: rgb(223, 222, 222);
     --white: #fff;
     --lobsterFont: 'Lobster Two', cursive;
+    --balsamicSans: 'Balsamiq Sans', cursive;
 }
 
 body {
@@ -52,7 +53,21 @@ $laptop: 1024px;
   }
 }
 
-$mobile: 500px;
+$ipad: 820px;
+@mixin ipad {
+  @media (max-width: #{$ipad}) {
+    @content
+  }
+}
+
+$tab: 768px;
+@mixin tab {
+  @media (max-width: #{$tab}) {
+    @content
+  }
+}
+
+$mobile: 550px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
     @content
@@ -69,17 +84,17 @@ $mobile-small: 399px;
 
 .default {
   min-height: 100vh;
-  padding: 30px;
-  margin: 0 0 0 60px;
-  animation: reveal 1s linear;
+  padding: 0 10% 0 10%;
+  // margin: 0 0 0 60px;
+	-webkit-animation: slidein-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slidein-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     @include laptop {
-      padding: 15px;
+      padding: 70px;
     }
 
     @include mobile {
       padding: 10px;
-      margin: 0;
     }
 }
 
@@ -89,16 +104,40 @@ $mobile-small: 399px;
 
 .active {
   display: inline-block;
-  animation: jumpy 3s both;
+  animation: jumpy 2s both;
   color: var(--dark-secondary);
+}
+
+// Fonts
+.header {
+  font-size: 90px;
+
+  @include laptopMid {
+    font-size: 80px;
+  }
+
+  @include ipad {
+    font-size: 60px;
+  }
+
+  @include tab {
+    font-size: 50px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 @keyframes reveal {
     0% {
         clip-path: circle(5%);
+        background-color: var(--dark-primary);
+        z-index: 15;
     }
     100% {
         clip-path: circle(100%);
+        z-index: 15;
     }
 }
 
@@ -195,3 +234,35 @@ $mobile-small: 399px;
   }
 }
 
+@-webkit-keyframes slidein-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slidein-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}

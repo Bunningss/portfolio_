@@ -6,11 +6,11 @@ const Projects = () => {
   return (
     <div className='projects default'>
         <div className="wrapper">
-          {
+          {/* {
             projects.map((project, indx) => (
               <Project key={indx} project={project} />
             ))
-          }
+          } */}
         </div>
     </div>
   )

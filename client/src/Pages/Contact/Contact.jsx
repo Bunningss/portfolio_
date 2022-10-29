@@ -27,7 +27,7 @@ const Contact = () => {
   }
   return (
     <div className='contact default'>
-      <TextAnimate text={"Contact Me"}/>
+      <TextAnimate text={"Say hi"}/>
       <TextZone text={text}/>
       <form className="contactForm" ref={formRef} onSubmit={handleClick}>
         <div className="formTop">

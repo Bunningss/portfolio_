@@ -1,21 +1,21 @@
-.textZone {
-    font-size: 16px;
-    word-spacing: 5px;
-    line-height: 1.6;
+.textzone-text {
+    font-size: 18px;
+    line-height: 1.4;
     color: var(--dark-primary);
     text-transform: capitalize;
     margin: 10px 0;
+    white-space: pre-wrap;
 }
 
-.textZoneLink {
+.textzone-link {
     width: fit-content;
     margin: 10px 0;
-    color: var(--dark-primary);
-    font-size: 16px;
+    color: var(--dark-secondary);
+    font-size: 18px;
     text-transform: capitalize;
     transition: all .3s ease;
 
     &:hover {
-        color: var(--dark-secondary);
+        opacity: .5;
     }
 }

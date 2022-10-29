@@ -10,12 +10,14 @@ import Contact from './Pages/Contact/Contact';
 import Error from './Pages/Error/Error';
 import Projects from './Pages/Projects/Projects';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Navigator from './Components/Navigator/Navigator';
 
 function App() {
   const [ active, setActive ] = useState(false);
   return (
     <BrowserRouter>
       <Navbar/>
+      <Navigator/>
       <Sidebar active={active} setActive={setActive}/>
       <Hamburger active={active} setActive={setActive}/>
       <Routes>

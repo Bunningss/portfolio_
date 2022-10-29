@@ -1,4 +1,4 @@
-import { sidebarList } from '../../staticData';
+import { extData, sidebarList } from '../../staticData';
 import ListItem from '../ListItem/ListItem';
 import './Sidebar.scss';
 
@@ -15,6 +15,13 @@ const Sidebar = ({ active, setActive }) => {
               <ListItem data={data} key={indx} handleClick={handleClick}/>
             ))
           }
+          <ul className="social-list">
+            {
+              extData.map((data, indx) => (
+                <ListItem data={data} key={indx}/>
+              ))
+            }
+          </ul>
         </ul>
     </div>
   )

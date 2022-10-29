@@ -14,11 +14,11 @@ const Letter = ({ letter }) => {
   useEffect(() => {
     setTimeout(() => {
       lett.current?.classList.remove("active");
-    }, 3000);
+    }, 2100);
   }, [time]);
 
   return ( 
-    <span ref={lett} onMouseOver={animate} className="letter">{letter}</span>
+    <span ref={lett} onMouseOver={animate} className="letter header">{letter}</span>
   )
 }
 

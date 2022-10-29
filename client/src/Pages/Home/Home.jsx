@@ -1,14 +1,13 @@
 import './Home.scss';
 import { useNavigate } from 'react-router';
-import Figure from '../../Components/Figure/Figure';
 import PrimaryButton from '../../Components/PrimaryButton/PrimaryButton';
 import TextAnimate from '../../Components/TextAnimate/TextAnimate';
 import TextZone from '../../Components/TextZone/TextZone';
 
 const Home = () => {
   const navigate = useNavigate();
-  const text = `Hello\nI'm Mahmud,\nWeb Developer`;
-  const textZone = "web developer / designer";
+  const text = `Tayef Mahmud\nI help build the web.`;
+  const textZone = "Full stack developer / designer";
 
   const handleClick = () => {
     navigate('/contact')
@@ -17,11 +16,11 @@ const Home = () => {
   return (
     <div className='home default'>
       <div className="textArea">
+        <p className="textzone-text">Hi, my name is</p>
         <TextAnimate text={text}/>
         <TextZone text={textZone}/>
-        <PrimaryButton handleClick={handleClick} text={"Contact Me!"}/>
+        <PrimaryButton handleClick={handleClick} text={"Say Hi"}/>
       </div>
-      <Figure/>
     </div>
   )
 }

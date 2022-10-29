@@ -1,39 +1,34 @@
-import home from './img/home.png';
-import about from './img/about.png';
-import project from './img/project.png';
-import contact from './img/contact.png';
+import git from './img/git.png';
+import insta from './img/insta.png';
+import fb from './img/fb.png';
+import twit from './img/twit.png';
+import upw from './img/upw.png';
+import fiv from './img/fiv.png';
 
-// Projects
-import customSticker from './img/projects/custom_sticker.webp';
-import puropasta from './img/projects/puropasta.webp';
-import zeus_drinks from './img/projects/zeus_drinks.webp';
-import pocobun from './img/projects/pocobun.webp';
-import briton_store from './img/projects/briton_store.webp';
-
-export const navbarData = [
+export const extData = [
     {
-        id: 1,
-        name: "Home",
-        icon: home,
-        href: "/"
+        icon: git,
+        target: "https://github.com/bunningss"
     },
     {
-        id: 2,
-        name: "About",
-        icon: about,
-        href: "/about"
+        icon: upw,
+        target: "https://github.com/bunningss"
     },
     {
-        id: 3,
-        name: "Skills",
-        icon: project,
-        href: "/projects"
+        icon: fiv,
+        target: "https://github.com/bunningss"
     },
     {
-        id: 4,
-        name: "Contact",
-        icon: contact,
-        href: "/contact"
+        icon: insta,
+        target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7/about"
+    },
+    {
+        icon: fb,
+        target: "https://www.facebook.com/ovi.mahmud83/"
+    },
+    {
+        icon: twit,
+        target: ""
     },
 ];
 
@@ -66,40 +61,17 @@ export const expertiseData = [
     },
 ];
 
-export const projects = [
-    {
-        image: customSticker,
-        link: 'https://custom-stc.herokuapp.com/'
-    },
-    {
-        image: pocobun,
-        link: 'https://pocobun.herokuapp.com/'
-    },
-    {
-        image: puropasta,
-        link: 'https://www.puropasta.com/'
-    },
-    {
-        image: briton_store,
-        link: 'https://britonstore.com/'
-    },
-    {
-        image: zeus_drinks,
-        link: ''
-    },
-];
-
 export const sidebarList = [
     {
         title: 'Home',
-        href: ''
+        href: '/'
     },
     {
         title: 'About',
         href: "/about"
     },
     {
-        title: 'Projects',
+        title: '</Projects>',
         href: "/projects"
     },
     {

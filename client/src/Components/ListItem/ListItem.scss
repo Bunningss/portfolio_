@@ -1,8 +1,10 @@
+@import '../../global.scss';
+
 a {
     transition: all .3s ease;
     color: var(--dark-primary);
 
-    .listItem {
+    .list-item {
 
         h4 {
             font-size: 18px;
@@ -10,7 +12,11 @@ a {
         }
 
         img {
-            width: 30px;
+            width: 35px;
+
+            @include ipad {
+                width: 30px;
+            }
         }
     }
 }
