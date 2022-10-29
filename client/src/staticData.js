@@ -5,6 +5,8 @@ import twit from './img/twit.png';
 import upw from './img/upw.png';
 import fiv from './img/fiv.png';
 
+import demo from './img/product.png';
+
 export const extData = [
     {
         icon: git,
@@ -12,24 +14,24 @@ export const extData = [
     },
     {
         icon: upw,
-        target: "https://github.com/bunningss"
+        target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7"
     },
     {
         icon: fiv,
-        target: "https://github.com/bunningss"
+        target: "https://www.fiverr.com/tayef47?up_rollout=true"
     },
     {
         icon: insta,
-        target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7/about"
+        target: "https://instagram.com/mahmud_ovi183?igshid=YmMyMTA2M2Y="
     },
     {
         icon: fb,
         target: "https://www.facebook.com/ovi.mahmud83/"
     },
-    {
-        icon: twit,
-        target: ""
-    },
+    // {
+    //     icon: twit,
+    //     target: ""
+    // },
 ];
 
 export const aboutText = "Highly motivated web developer with 2+ years of web development experience using modern web development technologies and industry best practices. I have worked on over 40+ projects and specialize in technologies like React JS, Next JS, Node JS, Express, Python, Django, etc. I love working on challenging projects and achieve better results than before.";
@@ -59,6 +61,12 @@ export const expertiseData = [
         exp: "95",
         color: "rgb(210, 108, 213)"
     },
+    {
+        id: 5,
+        label: "Flutter",
+        exp: "92",
+        color: "#5AC2F0"
+    },
 ];
 
 export const sidebarList = [
@@ -78,4 +86,32 @@ export const sidebarList = [
         title: 'Contact Me',
         href: "/contact"
     },
+];
+
+export const projects = [
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    {
+        img: demo
+    },
+    
 ];

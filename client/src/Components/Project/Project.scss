@@ -1,9 +1,9 @@
 @import '../../global.scss';
 
 .project {
-    border: 2px solid var(--grey-light);
-    height: 40vh;
-    border-radius: 10px;
+    border: 1px solid var(--grey-light);
+    height: 313px;
+    // border-radius: 10px;
     overflow: hidden;
 
     @include laptopMid {
