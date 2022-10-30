@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +68,14 @@ $tab: 768px;
   }
 }
 
-$mobile: 550px;
+$phablet: 600px;
+@mixin phablet {
+  @media (max-width: #{$phablet}) {
+    @content
+  }
+}
+
+$mobile: 450px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
     @content
@@ -93,7 +101,7 @@ $mobile-small: 399px;
       padding: 70px;
     }
 
-    @include mobile {
+    @include phablet {
       padding: 10px;
     }
 }
@@ -105,7 +113,7 @@ $mobile-small: 399px;
 .active {
   display: inline-block;
   animation: jumpy 2s both;
-  color: var(--dark-secondary);
+  color: var(--dark-primary);
 }
 
 // Fonts
@@ -124,8 +132,16 @@ $mobile-small: 399px;
     font-size: 50px;
   }
 
-  @include mobile {
+  @include phablet {
     font-size: 40px;
+  }
+
+  @include mobile {
+    font-size: 35px;
+  }
+
+  @include mobileSmall {
+    font-size: 30px;
   }
 }
 
@@ -265,4 +281,44 @@ $mobile-small: 399px;
             transform-origin: 50% 1400px;
     opacity: 1;
   }
+}
+
+@keyframes wavey {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+@keyframes wave {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
 }

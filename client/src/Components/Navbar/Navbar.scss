@@ -15,21 +15,35 @@
 
     z-index: 14;
 
-    @include mobile {
+    @include phablet {
         display: none;
     }
 
     .logo {
         height: 50%;
+        width: 100%;
+        position: relative;
 
         a {
 
             .logo-main {
                 font-size: 60px;
+                color: transparent;
                 text-transform: uppercase;
                 font-family: var(--lobsterFont);
                 font-style: italic;
                 cursor: pointer;
+                position: absolute;
+
+                &:nth-child(1) {
+                    color: transparent;
+                    -webkit-text-stroke: 2px var(--dark-secondary);
+                }
+
+                &:nth-child(2) {
+                    color: var(--dark-secondary);
+                    animation: wave 4s ease infinite;
+                }
             }
         }
     }
@@ -53,7 +67,7 @@
         content: '';
         height: 160px;
         width: 0;
-        border: 1px solid var(--dark-primary);
+        border: 1px solid var(--dark-secondary);
 
         @include ipad {
             height: 130px;

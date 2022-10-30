@@ -5,7 +5,7 @@ import twit from './img/twit.png';
 import upw from './img/upw.png';
 import fiv from './img/fiv.png';
 
-import demo from './img/product.png';
+import demo from './img/pocobun.png';
 
 export const extData = [
     {

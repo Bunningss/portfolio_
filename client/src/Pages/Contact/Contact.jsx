@@ -5,6 +5,7 @@ import PrimaryButton from '../../Components/PrimaryButton/PrimaryButton';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import HeaderPrimary from '../../Components/HeaderPrimary/HeaderPrimary';
 
 const Contact = () => {
   const [ processing, setProcessing ] = useState(false);
@@ -27,7 +28,8 @@ const Contact = () => {
   }
   return (
     <div className='contact default'>
-      <TextAnimate text={"Say hi"}/>
+      {/* <TextAnimate text={"Say hi"}/> */}
+      <HeaderPrimary text={"Say hi"}/>
       <TextZone text={text}/>
       <form className="contactForm" ref={formRef} onSubmit={handleClick}>
         <div className="formTop">

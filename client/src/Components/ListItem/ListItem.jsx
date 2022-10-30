@@ -5,7 +5,7 @@ const ListItem = ({ data, handleClick }) => {
   return (
     <>{
       data.target &&
-        <a href={data.target} target='_blank'>
+        <a href={data.target} target='_blank' className='list-item-wrapper'>
           <li className="list-item">
             <img src={data.icon} alt="" />
           </li>
@@ -13,7 +13,7 @@ const ListItem = ({ data, handleClick }) => {
     }
     {
       !data.target &&
-        <Link to={data.href ? data.href : ''}>
+        <Link to={data.href ? data.href : ''} className='list-item-wrapper'>
             <li className="list-item" onClick={handleClick}>
               {
                 data.title && <h4>{data.title}</h4>

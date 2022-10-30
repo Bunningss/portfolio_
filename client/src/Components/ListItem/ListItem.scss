@@ -1,14 +1,15 @@
 @import '../../global.scss';
 
-a {
+.list-item-wrapper {
     transition: all .3s ease;
-    color: var(--dark-primary);
+    color: var(--dark-secondary);
 
     .list-item {
 
         h4 {
             font-size: 18px;
             font-weight: 500;
+            transition: all .6s ease;
         }
 
         img {

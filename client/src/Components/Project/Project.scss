@@ -1,47 +1,42 @@
-@import '../../global.scss';
-
 .project {
-    border: 1px solid var(--grey-light);
-    height: 313px;
-    // border-radius: 10px;
-    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    position: relative;
 
-    @include laptopMid {
-        height: 35vh;
-    }
-
-    @include mobile {
-        height: 40vh;
-    }
-
-    &:hover {
-
-        .project-image {
-            transform: translateY(calc(-100% + 40vh));
-        }
-    }
-
-    .circle-wrapper {
-        height: 20px;
-        background-color: var(--grey-light);
-        display: flex;
-        align-items: center;
-        gap: 3px;
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 10;
-
-        .circle {
-            height: 6px;
-            width: 6px;
-            border-radius: 50%;
-            background-color: var(--white);
-        }
-    }
-
-    .project-image {
+    a {
+        height: 100%;
         width: 100%;
-        transition: all 10s ease;
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .project-title-container {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        display: flex;
+
+        .project-title {
+            position: relative;
+
+            .project-title-text {
+                color: #fff;
+                position: absolute;
+
+                &:nth-child(1) {
+                    color: transparent;
+                    -webkit-text-stroke: 2px var(--dark-secondary);
+                }
+
+                &:nth-child(2) {
+                    color: var(--dark-secondary);
+                    animation: wave 4s ease-in-out infinite;
+                }
+            }
+        }
     }
 }

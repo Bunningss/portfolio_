@@ -1,7 +1,7 @@
 .textzone-text {
     font-size: 18px;
     line-height: 1.4;
-    color: var(--dark-primary);
+    color: var(--dark-secondary);
     text-transform: capitalize;
     margin: 10px 0;
     white-space: pre-wrap;
@@ -10,7 +10,7 @@
 .textzone-link {
     width: fit-content;
     margin: 10px 0;
-    color: var(--dark-secondary);
+    color: var(--dark-primary);
     font-size: 18px;
     text-transform: capitalize;
     transition: all .3s ease;
