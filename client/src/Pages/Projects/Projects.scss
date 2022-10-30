@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .projects {
     display: flex;
     justify-content: center;
@@ -11,5 +13,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap:30px;
         overflow: hidden;
+
+        @include ipad{
+            grid-template-columns: 1fr;
+        }
+
+        @include phablet {
+            margin: 50px 0;
+        }
     }
 }

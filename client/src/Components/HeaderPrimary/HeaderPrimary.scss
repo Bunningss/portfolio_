@@ -15,6 +15,10 @@
         height: 50px;
     }
 
+    @include mobileSmall {
+        height: 40px;
+    }
+
     .header-primary {
         position: relative;
 

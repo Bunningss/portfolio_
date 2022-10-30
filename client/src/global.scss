@@ -124,6 +124,10 @@ $mobile-small: 399px;
     font-size: 80px;
   }
 
+  @include laptop {
+    font-size: 70px;
+  }
+
   @include ipad {
     font-size: 60px;
   }
@@ -321,4 +325,13 @@ $mobile-small: 399px;
 			0% 100%
 		);
 	}
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }

@@ -28,10 +28,6 @@ export const extData = [
         icon: fb,
         target: "https://www.facebook.com/ovi.mahmud83/"
     },
-    // {
-    //     icon: twit,
-    //     target: ""
-    // },
 ];
 
 export const aboutText = "Highly motivated web developer with 2+ years of web development experience using modern web development technologies and industry best practices. I have worked on over 40+ projects and specialize in technologies like React JS, Next JS, Node JS, Express, Python, Django, etc. I love working on challenging projects and achieve better results than before.";
@@ -61,10 +57,16 @@ export const expertiseData = [
         exp: "95",
         color: "rgb(210, 108, 213)"
     },
-    {
+        {
         id: 5,
-        label: "Flutter",
-        exp: "92",
+        label: "Python",
+        exp: "95",
+        color: "#5AC2F0"
+    },
+    {
+        id: 6,
+        label: "Django",
+        exp: "97",
         color: "#5AC2F0"
     },
 ];
