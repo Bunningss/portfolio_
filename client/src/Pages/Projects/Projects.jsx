@@ -1,17 +1,17 @@
 import './Projects.scss';
 import Project from '../../Components/Project/Project';
 import { projects } from '../../staticData';
-import { useEffect } from 'react';
 
 const Projects = () => {
 
   return (
     <div className="projects default">
       <div className="wrapper">
-        <Project/>
-        <Project/>
-        <Project/>
-        <Project/>
+        {
+          projects.map((proj, indx) => (
+            <Project project={proj} key={indx}/>
+          ))
+        }
       </div>
     </div>
   )

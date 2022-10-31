@@ -1,11 +1,12 @@
 import git from './img/git.png';
 import insta from './img/insta.png';
 import fb from './img/fb.png';
-import twit from './img/twit.png';
 import upw from './img/upw.png';
 import fiv from './img/fiv.png';
 
-import demo from './img/pocobun.png';
+import poco from './img/poco.webp';
+import briton from './img/briton_store.webp';
+import cs from './img/cs.webp';
 
 export const extData = [
     {
@@ -42,7 +43,7 @@ export const expertiseData = [
     {
         id: 2,
         label: "Node JS",
-        exp: "87",
+        exp: "90",
         color: "rgb(69,151,71)"
     },
     {
@@ -61,13 +62,13 @@ export const expertiseData = [
         id: 5,
         label: "Python",
         exp: "95",
-        color: "#5AC2F0"
+        color: "#F7CC42"
     },
     {
         id: 6,
         label: "Django",
         exp: "97",
-        color: "#5AC2F0"
+        color: "#44B78B"
     },
 ];
 
@@ -92,28 +93,15 @@ export const sidebarList = [
 
 export const projects = [
     {
-        img: demo
+        img: poco,
+        title: "Pocobun"
     },
     {
-        img: demo
+        img: cs,
+        title: "Custom Sticker"
     },
     {
-        img: demo
-    },
-    {
-        img: demo
-    },
-    {
-        img: demo
-    },
-    {
-        img: demo
-    },
-    {
-        img: demo
-    },
-    {
-        img: demo
-    },
-    
+        img: briton,
+        title: "Briton Store"
+    }
 ];
