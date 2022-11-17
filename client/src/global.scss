@@ -1,113 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 :root {
-    --light-primary: #F4F5FF;
-    --dark-primary: #2F1C6A;
-    --dark-secondary: #212529;
-    --grey: #9e9696;
-    --grey-light: rgb(223, 222, 222);
-    --white: #fff;
-    --lobsterFont: 'Lobster Two', cursive;
-    --balsamicSans: 'Balsamiq Sans', cursive;
+  --light-primary: #f4f5ff;
+  --dark-primary: #2f1c6a;
+  --dark-secondary: #212529;
+  --grey: #9e9696;
+  --grey-light: rgb(223, 222, 222);
+  --white: #fff;
+  --lobsterFont: "Lobster Two", cursive;
+  --balsamicSans: "Balsamiq Sans", cursive;
 }
 
 body {
-    user-select: none;
-    background-color: var(--light-primary);
+  user-select: none;
+  background-color: var(--light-primary);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 // Media Query
 $largeLaptop: 1440px;
-@mixin  laptopLarge {
+@mixin laptopLarge {
   @media (max-width: #{$largeLaptop}) {
-    @content
+    @content;
   }
 }
 
 $laptopMid: 1220px;
 @mixin laptopMid {
   @media (max-width: #{$laptopMid}) {
-    @content
+    @content;
   }
 }
 
 $laptop: 1024px;
 @mixin laptop {
   @media (max-width: #{$laptop}) {
-    @content
+    @content;
   }
 }
 
 $ipad: 820px;
 @mixin ipad {
   @media (max-width: #{$ipad}) {
-    @content
+    @content;
   }
 }
 
 $tab: 768px;
 @mixin tab {
   @media (max-width: #{$tab}) {
-    @content
+    @content;
   }
 }
 
 $phablet: 600px;
 @mixin phablet {
   @media (max-width: #{$phablet}) {
-    @content
+    @content;
   }
 }
 
 $mobile: 450px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
-    @content
+    @content;
   }
 }
 
 $mobile-small: 399px;
 @mixin mobileSmall {
   @media (max-width: #{$mobile-small}) {
-    @content
+    @content;
   }
 }
-
 
 .default {
   min-height: 100vh;
   padding: 0 10% 0 10%;
   // margin: 0 0 0 60px;
-	-webkit-animation: slidein-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slidein-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slidein-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slidein-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
-    @include laptop {
-      padding: 70px;
-    }
+  @include laptop {
+    padding: 70px;
+  }
 
-    @include phablet {
-      padding: 10px;
-    }
+  @include phablet {
+    padding: 10px;
+  }
 }
 
 .slide {
-    animation: slideRight 1s linear;
+  animation: slideRight 1s linear;
 }
 
 .active {
@@ -150,84 +150,84 @@ $mobile-small: 399px;
 }
 
 @keyframes reveal {
-    0% {
-        clip-path: circle(5%);
-        background-color: var(--dark-primary);
-        z-index: 15;
-    }
-    100% {
-        clip-path: circle(100%);
-        z-index: 15;
-    }
+  0% {
+    clip-path: circle(5%);
+    background-color: var(--dark-primary);
+    z-index: 15;
+  }
+  100% {
+    clip-path: circle(100%);
+    z-index: 15;
+  }
 }
 
 @keyframes slideRight {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: none;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: none;
+  }
 }
 
 @-webkit-keyframes jumpy {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   40% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
   50% {
     -webkit-transform: scale3d(0.85, 1.15, 1);
-            transform: scale3d(0.85, 1.15, 1);
+    transform: scale3d(0.85, 1.15, 1);
   }
   65% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
   75% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes jumpy {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   40% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
   50% {
     -webkit-transform: scale3d(0.85, 1.15, 1);
-            transform: scale3d(0.85, 1.15, 1);
+    transform: scale3d(0.85, 1.15, 1);
   }
   65% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
   75% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -257,81 +257,83 @@ $mobile-small: 399px;
 @-webkit-keyframes slidein-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
     opacity: 1;
   }
 }
 @keyframes slidein-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
     opacity: 1;
   }
 }
 
 @keyframes wavey {
-  0%,40%,100% {
-    transform: translateY(0)
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
   }
   20% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 }
 
 @keyframes wave {
-	0%,
-	100% {
-		clip-path: polygon(
-			0% 45%,
-			16% 44%,
-			33% 50%,
-			54% 60%,
-			70% 61%,
-			84% 59%,
-			100% 52%,
-			100% 100%,
-			0% 100%
-		);
-	}
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
 
-	50% {
-		clip-path: polygon(
-			0% 60%,
-			15% 65%,
-			34% 66%,
-			51% 62%,
-			67% 50%,
-			84% 45%,
-			100% 46%,
-			100% 100%,
-			0% 100%
-		);
-	}
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 
 @keyframes slideIn {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }

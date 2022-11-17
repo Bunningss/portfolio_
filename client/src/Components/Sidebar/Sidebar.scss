@@ -1,38 +1,37 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .sidebar {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  background-color: var(--light-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+
+  &.visible {
+    @include phablet {
+      display: block;
+      animation: slidein-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+
+  .sidebar-list {
     height: 100%;
-    z-index: 12;
-    background-color: var(--light-primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all .4s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    &.visible {
-
-        @include phablet {
-            display: block;
-            animation: slidein-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        }
+    .social-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 30px 0;
     }
-
-    .sidebar-list {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-        .social-list {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            margin: 30px 0;
-        }
-    }
+  }
 }

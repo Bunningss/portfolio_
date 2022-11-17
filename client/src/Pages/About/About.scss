@@ -1,61 +1,61 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include laptop {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  @include ipad {
+    gap: 50px;
+  }
+
+  @include phablet {
+    margin: 50px 0;
+  }
+
+  @include mobile {
+    gap: 40px;
+  }
+
+  @include mobileSmall {
+    gap: 20px;
+  }
+
+  .aboutLeft {
+    min-height: 450px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
 
     @include laptop {
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
+      width: 100%;
+      min-height: 50%;
+      padding: 0;
     }
+  }
 
-    @include ipad {
-        gap: 50px;
+  .aboutRight {
+    min-height: 450px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+
+    @include laptop {
+      width: 100%;
+      min-height: 50%;
+      padding: 0;
     }
-
-    @include phablet {
-        margin: 50px 0;
-    }
-
-    @include mobile {
-        gap: 40px;
-    }
-
-    @include mobileSmall {
-        gap: 20px;
-    }
-
-    .aboutLeft {
-        min-height: 450px;
-        width: 50%;
-        height: 100%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-
-        @include laptop {
-            width: 100%;
-            min-height: 50%;
-            padding: 0;
-        }
-    }
-
-    .aboutRight {
-        min-height: 450px;
-        width: 50%;
-        height: 100%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-
-        @include laptop {
-            width: 100%;
-            min-height: 50%;
-            padding: 0;
-        }
-    }
+  }
 }

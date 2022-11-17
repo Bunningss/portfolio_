@@ -1,11 +1,12 @@
-import './PrimaryButton.scss';
-import { Link } from 'react-router-dom';
+import "./PrimaryButton.scss";
+import { Link } from "react-router-dom";
 
 const PrimaryButton = ({ handleClick, text, href }) => {
-
   return (
-      <button onClick={handleClick} className="btnPrimary">{text}</button>
-  )
-}
+    <button onClick={handleClick} className="btnPrimary">
+      {text}
+    </button>
+  );
+};
 
-export default PrimaryButton
+export default PrimaryButton;

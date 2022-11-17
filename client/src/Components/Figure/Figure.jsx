@@ -1,9 +1,7 @@
-import './Figure.scss';
+import "./Figure.scss";
 
 const Figure = () => {
-  return (
-    <span className='figure'>M</span>
-  )
-}
+  return <span className="figure">M</span>;
+};
 
-export default Figure
+export default Figure;

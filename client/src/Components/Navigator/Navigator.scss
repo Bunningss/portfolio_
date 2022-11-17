@@ -1,19 +1,19 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .navigator {
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
-    z-index: 13;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  z-index: 13;
 
-    @include phablet {
-        display: none;
-    }
+  @include phablet {
+    display: none;
+  }
 }

@@ -1,11 +1,11 @@
-import './Project.scss';
-import { Link } from 'react-router-dom';
+import "./Project.scss";
+import { Link } from "react-router-dom";
 
 const Project = ({ project }) => {
   return (
     <div className="project">
-      <Link to=':id'>
-        <img src={project.img} alt="" className="project-img" />
+      <Link to=":id">
+        <img src={project.img} alt="" className="project-img" loading="lazy" />
         <div className="project-title-container">
           <div className="project-title">
             <h2 className="project-title-text header">{project.title}</h2>
@@ -14,7 +14,7 @@ const Project = ({ project }) => {
         </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
