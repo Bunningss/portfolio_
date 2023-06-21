@@ -13,14 +13,14 @@ export const extData = [
     icon: git,
     target: "https://github.com/bunningss",
   },
-  // {
-  //   icon: upw,
-  //   target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7",
-  // },
-  {
-    icon: fiv,
-    target: "https://www.fiverr.com/tayef47?up_rollout=true",
-  },
+//   {
+//     icon: upw,
+//     target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7",
+//   },
+//  {
+//    icon: fiv,
+//    target: "https://www.fiverr.com/tayef47?up_rollout=true",
+//  },
   {
     icon: insta,
     target: "https://instagram.com/mahmud_ovi183?igshid=YmMyMTA2M2Y=",
@@ -35,12 +35,12 @@ export const aboutText =
   "A computer enthusiast and motivated individual with full-stack web development skills and a fascination with data analysis. I am flexible, reliable and possess excellent time-keeping skills.";
 
 export const expertiseData = [
-  {
-    id: 1,
-    label: "React JS",
-    exp: "95",
-    color: "rgb(8, 248, 216)",
-  },
+//  {
+//    id: 1,
+//    label: "React JS",
+//    exp: "95",
+//    color: "rgb(8, 248, 216)",
+//  },
   {
     id: 2,
     label: "Node JS",
@@ -65,12 +65,12 @@ export const expertiseData = [
     exp: "95",
     color: "#F7CC42",
   },
-  {
-    id: 6,
-    label: "Django",
-    exp: "97",
-    color: "#44B78B",
-  },
+//  {
+//    id: 6,
+//    label: "Django",
+//    exp: "97",
+//    color: "#44B78B",
+//  },
 ];
 
 export const sidebarList = [
