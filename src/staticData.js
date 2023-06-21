@@ -13,10 +13,10 @@ export const extData = [
     icon: git,
     target: "https://github.com/bunningss",
   },
-  {
-    icon: upw,
-    target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7",
-  },
+  // {
+  //   icon: upw,
+  //   target: "https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7",
+  // },
   {
     icon: fiv,
     target: "https://www.fiverr.com/tayef47?up_rollout=true",
@@ -32,7 +32,7 @@ export const extData = [
 ];
 
 export const aboutText =
-  "Highly motivated web developer with 2+ years of web development experience using modern web development technologies and industry best practices. I have worked on over 40+ projects and specialize in technologies like React JS, Next JS, Node JS, Express, Python, Django, etc. I love working on challenging projects and achieve better results than before.";
+  "A computer enthusiast and motivated individual with full-stack web development skills and a fascination with data analysis. I am flexible, reliable and possess excellent time-keeping skills.";
 
 export const expertiseData = [
   {

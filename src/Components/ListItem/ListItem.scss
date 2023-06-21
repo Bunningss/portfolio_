@@ -14,13 +14,14 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -5px;
-        left: 0;
+        bottom: -3px;
+        left: -2px;
+        border-radius: 10px;
         width: 0%;
         height: 2px;
         background-color: var(--dark-secondary);
         opacity: 0;
-        transition: opacity 1000ms, transform 1000ms;
+        transition: opacity 2000ms, transform 1000ms;
       }
 
       &:hover::after,
