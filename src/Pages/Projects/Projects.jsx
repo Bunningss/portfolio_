@@ -1,16 +1,23 @@
 import "./Projects.scss";
 import Project from "../../Components/Project/Project";
 import { projects } from "../../staticData";
+import TimelineItem from "../../Components/TimelineItem/TimelineItem";
+import Container from "../../Components/Container/Container";
 
 const Projects = () => {
   return (
-    <div className="projects default">
-      <div className="wrapper">
-        {projects.map((proj, indx) => (
-          <Project project={proj} key={indx} />
-        ))}
+    <Container>
+      <div className="projects">
+        <div className="timelineWrapper">
+          <TimelineItem />
+          <TimelineItem />
+          <TimelineItem />
+          <TimelineItem />
+          <TimelineItem />
+          <TimelineItem />
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

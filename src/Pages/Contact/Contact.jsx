@@ -6,6 +6,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import HeaderPrimary from "../../Components/HeaderPrimary/HeaderPrimary";
+import Container from "../../Components/Container/Container";
 
 const Contact = () => {
   const [processing, setProcessing] = useState(false);
@@ -37,32 +38,39 @@ const Contact = () => {
       );
   };
   return (
-    <div className="contact default">
-      {/* <TextAnimate text={"Say hi"}/> */}
-      <HeaderPrimary text={"Say hi"} />
-      <TextZone text={text} />
-      <form className="contactForm" ref={formRef} onSubmit={handleClick}>
-        <div className="formTop">
-          <input type="text" required placeholder="Name" name="user_name" />
+    <Container>
+      <div className="contact">
+        {/* <TextAnimate text={"Say hi"} /> */}
+        <HeaderPrimary text={"Say hi"} />
+        <TextZone text={text} />
+        <form className="contactForm" ref={formRef} onSubmit={handleClick}>
+          <div className="formTop">
+            <input type="text" required placeholder="Name" name="user_name" />
+            <input
+              type="email"
+              required
+              placeholder="Email Address"
+              name="user_email"
+            />
+          </div>
           <input
-            type="email"
+            type="text"
             required
-            placeholder="Email Address"
-            name="user_email"
+            placeholder="Subject"
+            name="user_subject"
           />
-        </div>
-        <input type="text" required placeholder="Subject" name="user_subject" />
-        <textarea
-          id=""
-          cols="30"
-          rows="10"
-          required
-          placeholder="Message"
-          name="message"
-        ></textarea>
-        <PrimaryButton text={processing ? "Processing..." : "Send Message"} />
-      </form>
-    </div>
+          <textarea
+            id=""
+            cols="30"
+            rows="10"
+            required
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <PrimaryButton text={processing ? "Processing..." : "Send Message"} />
+        </form>
+      </div>
+    </Container>
   );
 };
 
