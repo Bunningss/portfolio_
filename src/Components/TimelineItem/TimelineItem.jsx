@@ -4,7 +4,7 @@ const TimelineItem = ({ project }) => {
   return (
     <div className="timelineItem">
       <div>
-        <p className="timelineDate">17 Aug 2024</p>
+        <p className="timelineDate">17 Jul 2023</p>
       </div>
       <div className="timelineBar">
         <div className="timelineCircle"></div>

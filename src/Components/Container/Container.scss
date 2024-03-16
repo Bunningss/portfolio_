@@ -16,3 +16,9 @@
     max-width: 1440px;
   }
 }
+
+@include phablet {
+  .container {
+    padding: 120px 10px 0 10px;
+  }
+}
