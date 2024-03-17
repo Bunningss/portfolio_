@@ -8,6 +8,7 @@
   --color-primary: #212529;
   --color-secondary: #2f1c6a;
   --color-accent: #f4f5ff;
+  --linear-gradient: -webkit-linear-gradient(#2f1c6a, #f4f5ff);
   --header-primary: 5.5em;
   --font-regular: 1.5em;
   --padding: 1em;

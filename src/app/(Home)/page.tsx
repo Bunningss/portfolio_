@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Button from "@/Components/Button/Button";
 import Container from "@/Components/Container/Container";
 import Headers from "@/Components/Headers/Headers";
+import HeroText from "@/Components/HeroText/HeroText";
 import Section from "@/Components/Section/Section";
 import TextWrapper from "@/Components/TextWrapper/TextWrapper";
 
@@ -10,8 +11,9 @@ export default function Home() {
     <Container>
       <Section>
         <div className={styles.contentWrapper}>
-          <Headers primary="Tayef Mahmud" />
-          <Headers primary="I help build the web." />
+          {/* <Headers primary="Tayef Mahmud" />
+          <Headers primary="I help build the web." /> */}
+          <HeroText />
           <TextWrapper>Full stack developer / designer</TextWrapper>
         </div>
         <div className={styles.buttonWrapper}>
