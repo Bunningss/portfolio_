@@ -4,10 +4,10 @@
 }
 
 .heroText span {
-  background: var(--linear-gradient);
+  background: var(--color-accent);
   background-clip: text;
-  -webkit-text-stroke: 6px transparent;
-  color: var(--color-accent);
+  -webkit-text-stroke: 8px transparent;
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 1024px) {

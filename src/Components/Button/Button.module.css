@@ -2,7 +2,8 @@
   padding: 1em 5em;
   border-radius: var(--radius);
   outline: none;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
   background-color: transparent;
   font-size: calc(var(--font-regular) / 1.5);
   text-transform: capitalize;

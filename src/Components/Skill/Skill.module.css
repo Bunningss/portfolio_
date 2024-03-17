@@ -1,7 +1,7 @@
 .skill {
   padding: var(--padding);
-  background-color: var(--color-primary);
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
   width: fit-content;
   border-radius: var(--radius);
   cursor: pointer;

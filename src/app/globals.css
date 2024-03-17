@@ -21,8 +21,9 @@
 
 html,
 body {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   user-select: none;
+  color: var(--color-accent);
 }
 
 a {

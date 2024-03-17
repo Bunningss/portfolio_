@@ -14,11 +14,11 @@
 
 .headerText:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px var(--color-primary);
+  -webkit-text-stroke: 2px var(--color-accent);
 }
 
 .headerText:nth-child(2) {
-  color: var(--color-primary);
+  color: var(--color-accent);
   animation: wave 4s ease-in-out infinite;
 }
 

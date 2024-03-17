@@ -10,12 +10,12 @@
 }
 
 .timelineBar {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   position: relative;
 }
 
 .timelineCircle {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
@@ -26,18 +26,18 @@
 }
 
 .timelineContent {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   margin: var(--margin);
   border-radius: var(--radius);
   padding: var(--padding);
   min-height: 153px;
-  color: var(--color-accent);
+  color: var(--color-primary);
   cursor: pointer;
-  transition: background-color var(--transition);
 }
 
 .timelineContent:hover {
   background-color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .timelineHeader {
