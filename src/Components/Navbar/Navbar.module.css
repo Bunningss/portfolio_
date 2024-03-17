@@ -1,6 +1,6 @@
 .navbar {
   height: 100%;
-  width: 5em;
+  width: 3em;
 }
 
 .socials {
@@ -14,14 +14,14 @@
 
 .socials::after {
   content: "";
-  height: 170px;
+  height: 200px;
   width: 0;
   border: 1px solid var(--color-primary);
 }
 
 .socialIcon {
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   object-fit: contain;
   border-radius: 50%;
   border: 1px solid var(--color-primary);

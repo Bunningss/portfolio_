@@ -1,5 +1,5 @@
 .section {
-  height: calc(100vh - 5em);
+  height: calc(100vh - 3em);
 
   display: flex;
   flex-direction: column;

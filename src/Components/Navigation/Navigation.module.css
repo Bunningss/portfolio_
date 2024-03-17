@@ -1,5 +1,5 @@
 .navigation {
-  height: 5em;
+  height: 3em;
   position: relative;
 }
 
@@ -12,6 +12,15 @@
 .links {
   font-size: var(--font-regular);
   text-transform: capitalize;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 3em;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 600px) {
