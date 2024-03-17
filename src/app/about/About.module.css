@@ -1,0 +1,24 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: calc(var(--gap) * 2);
+  }
+
+  .skills {
+    gap: calc(var(--gap) / 2);
+  }
+}

@@ -1,0 +1,16 @@
+.contentWrapper {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.buttonWrapper {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+@media screen and (max-width: 1024px) {
+  .buttonWrapper {
+    padding-top: calc(var(--padding) / 1.5);
+    padding-bottom: calc(var(--padding) / 1.5);
+  }
+}

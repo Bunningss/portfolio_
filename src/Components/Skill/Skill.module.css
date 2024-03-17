@@ -1,0 +1,16 @@
+.skill {
+  padding: var(--padding);
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  width: fit-content;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.skill::first-letter {
+  text-transform: uppercase;
+}
+
+.skill:hover {
+  background-color: var(--color-secondary);
+}

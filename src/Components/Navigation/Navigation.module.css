@@ -1,0 +1,21 @@
+.navigation {
+  height: 5em;
+  position: relative;
+}
+
+.col {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap);
+}
+
+.links {
+  font-size: var(--font-regular);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    font-size: calc(var(--font-regular) / 1.2);
+  }
+}

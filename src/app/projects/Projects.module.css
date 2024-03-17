@@ -1,0 +1,8 @@
+.timelineWrapper {
+  height: calc(100vh - 5em);
+  overflow-y: scroll;
+}
+
+.timelineWrapper::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #212529;
+  --color-secondary: #2f1c6a;
+  --color-accent: #f4f5ff;
+  --header-primary: 5.5em;
+  --font-regular: 1.5em;
+  --padding: 1em;
+  --padding-rl: 0 1em;
+  --padding-tb: 1em 0;
+  --margin: 1em;
+  --radius: 0.25em;
+  --gap: 1em;
+}
+
+html,
+body {
+  background-color: var(--color-accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout-wrapper {
+  display: flex;
+  width: 100%;
+}
