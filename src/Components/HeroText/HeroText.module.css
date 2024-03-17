@@ -32,3 +32,9 @@
     font-size: calc(7em / 2.3);
   }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .heroText {
+    font-size: calc(7em / 2.5);
+  }
+}

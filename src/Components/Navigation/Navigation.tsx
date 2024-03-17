@@ -17,9 +17,9 @@ const Navigation: FC = () => {
           <Link href="/projects" className={styles.links}>
             projects
           </Link>
-          <Link href="/contact" className={styles.links}>
+          {/* <Link href="/contact" className={styles.links}>
             contact
-          </Link>
+          </Link> */}
         </div>
       </Container>
     </div>
