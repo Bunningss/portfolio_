@@ -12,5 +12,6 @@
 }
 
 .skill:hover {
+  color: var(--color-accent);
   background-color: var(--color-secondary);
 }
